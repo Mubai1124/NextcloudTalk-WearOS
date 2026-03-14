@@ -33,13 +33,13 @@
         
         <!-- 消息轮询前台服务 -->
         <service
-            android:name=".service.MessagePollingService"
+            android:name="com.example.wearmaterial.service.MessagePollingService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="dataSync" />
         
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.wearmaterial.MainActivity"
             android:exported="true"
             android:taskAffinity=".MainActivity">
             <intent-filter>

@@ -4,6 +4,9 @@
 -keep class com.example.wearmaterial.models.** { *; }
 -keep class com.example.wearmaterial.data.** { *; }
 
+# Keep all classes in the app package (safe approach)
+-keep class com.example.wearmaterial.** { *; }
+
 # Keep Room entities
 -keep class * extends androidx.room.RoomDatabase
 -keep @androidx.room.Entity class *
@@ -39,6 +42,9 @@
 
 # Keep Wear OS
 -keep class androidx.wear.** { *; }
+
+# Keep DataStore
+-keep class androidx.datastore.** { *; }
 
 # Keep all parcelable classes
 -keepclassmembers class * implements android.os.Parcelable {

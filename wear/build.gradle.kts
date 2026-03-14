@@ -5,14 +5,8 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
-// 从 gradle.properties 或环境变量读取签名配置
-val storeFile: String? = findProperty("STORE_FILE") as String? ?: System.getenv("STORE_FILE")
-val storePassword: String? = findProperty("STORE_PASSWORD") as String? ?: System.getenv("STORE_PASSWORD")
-val keyAlias: String? = findProperty("KEY_ALIAS") as String? ?: System.getenv("KEY_ALIAS")
-val keyPassword: String? = findProperty("KEY_PASSWORD") as String? ?: System.getenv("KEY_PASSWORD")
-
 android {
-    namespace = "com.nextcloud.talk.wear"
+    namespace = "com.example.wearmaterial"
     compileSdk = 35
 
     defaultConfig {
@@ -24,13 +18,11 @@ android {
     }
     
     signingConfigs {
-        if (storeFile != null && storePassword != null && keyAlias != null && keyPassword != null) {
-            create("release") {
-                this.storeFile = file(storeFile)
-                this.storePassword = storePassword
-                this.keyAlias = keyAlias
-                this.keyPassword = keyPassword
-            }
+        create("release") {
+            storeFile = file("${System.getenv("HOME")}/.openclaw/secrets/mubai1124.keystore")
+            storePassword = "Mubai1124Release"
+            keyAlias = "Mubai1124"
+            keyPassword = "Mubai1124Release"
         }
     }
 
@@ -42,9 +34,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            if (storeFile != null) {
-                signingConfig = signingConfigs.getByName("release")
-            }
+            signingConfig = signingConfigs.getByName("release")
         }
         debug {
             isMinifyEnabled = false
