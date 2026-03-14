@@ -1,0 +1,48 @@
+# Third-Party Notices
+
+This application uses the following third-party libraries:
+
+## OkHttp
+Copyright Square, Inc.
+Licensed under the Apache License, Version 2.0
+https://square.github.io/okhttp/
+
+## Retrofit
+Copyright Square, Inc.
+Licensed under the Apache License, Version 2.0
+https://square.github.io/retrofit/
+
+## Gson
+Copyright Google Inc.
+Licensed under the Apache License, Version 2.0
+https://github.com/google/gson
+
+## Jetpack Compose
+Copyright Google Inc.
+Licensed under the Apache License, Version 2.0
+https://developer.android.com/jetpack/compose
+
+## Room
+Copyright Google Inc.
+Licensed under the Apache License, Version 2.0
+https://developer.android.com/training/data-storage/room
+
+## Kotlin Coroutines
+Copyright JetBrains s.r.o.
+Licensed under the Apache License, Version 2.0
+https://github.com/Kotlin/kotlinx.coroutines
+
+## Wear OS Compose
+Copyright Google Inc.
+Licensed under the Apache License, Version 2.0
+https://developer.android.com/training/wearables
+
+---
+
+## Nextcloud Talk Android
+
+This application is based on Nextcloud Talk Android.
+
+Copyright 2017-2024 Nextcloud GmbH and Nextcloud contributors
+Licensed under GPL-3.0-or-later
+https://github.com/nextcloud/talk-android

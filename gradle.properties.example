@@ -1,0 +1,14 @@
+# 签名配置示例
+# 复制此文件为 gradle.properties 并填入实际值
+
+# 签名密钥库文件路径（相对于项目根目录）
+STORE_FILE=../your-keystore.keystore
+
+# 密钥库密码
+STORE_PASSWORD=your_store_password
+
+# 密钥别名
+KEY_ALIAS=your_key_alias
+
+# 密钥密码
+KEY_PASSWORD=your_key_password
